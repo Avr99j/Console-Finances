@@ -124,8 +124,8 @@ var greatestDecrease = finances.reduce((acc, entry, index, array) => {
 }, { date: '', amount: Infinity });
 
 // Output the results
-console.log("Total number of months:", totalMonths);
-console.log("Net total Profit/Losses:", netTotal);
-console.log("Average of changes:", averageChange.toFixed(2));
-console.log("Greatest increase in profits:", greatestIncrease.date, "(", greatestIncrease.amount.toFixed(2), ")");
-console.log("Greatest decrease in losses:", greatestDecrease.date, "(", greatestDecrease.amount.toFixed(2), ")");
+console.log("Total Months:", totalMonths);
+console.log("Net total Profit/Losses: $", netTotal);
+console.log("Average Change:", averageChange.toFixed(2));
+console.log("Greatest Increase in Profits/Losses:", greatestIncrease.date, "($", greatestIncrease.amount.toFixed(2), ")");
+console.log("Greatest Decrease in Profits/Losses", greatestDecrease.date, "($", greatestDecrease.amount.toFixed(2), ")");
